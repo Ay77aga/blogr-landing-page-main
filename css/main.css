@@ -18,6 +18,7 @@
     width: 1170px;
   }
 }
+
 a {
   text-decoration: none;
 }
@@ -57,7 +58,6 @@ body {
 }
 
 .landing {
-  height: 90vh;
   background: linear-gradient(145deg,
       var(--Vlight-red) 25%,
       var(--light-red) 100%);
@@ -89,7 +89,7 @@ body {
 .landing header {
   display: flex;
   justify-content: space-between;
-  padding: 40px 20px;
+  padding: 60px 20px;
   position: relative;
   z-index: 2;
 }
@@ -129,9 +129,10 @@ body {
   left: 0;
   transition: .5s;
 }
-  nav ul li.active img {
-    transform: rotateZ(180deg)
-  }
+
+nav ul li.active img {
+  transform: rotateZ(180deg)
+}
 
 .active span:first-child {
   transform: rotateZ(45deg);
@@ -142,13 +143,10 @@ body {
 }
 
 .landing .intro {
-  position: absolute;
+  position: relative;
   text-align: center;
-  top: 50%;
+  padding-bottom: 70px;
   width: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 0 20px;
   color: #fff;
 }
 
@@ -165,7 +163,7 @@ body {
 .landing .intro a,
 nav a {
   display: inline-flex;
-  margin: 50px 0 0 20px;
+  margin: 20px 0 0 20px;
   padding: 10px 15px;
   font-weight: bold;
   font-size: 18px;
@@ -236,6 +234,7 @@ nav ul li ul li:hover a {
 }
 
 .future .container {
+  position: relative;
   text-align: center;
   display: flex;
   align-items: center;
@@ -248,16 +247,14 @@ nav ul li ul li:hover a {
 }
 
 .future>h2 {
-  padding: 40px 0;
   font-size: 30px;
   text-align: center;
-  margin: 20px auto;
   color: hsl(237, 23%, 32%);
 }
 
 .future div h2 {
   color: hsl(237, 23%, 32%);
-  margin: 20px auto;
+  margin: 30px auto;
 
 }
 
@@ -319,7 +316,7 @@ nav ul li ul li:hover a {
 }
 
 .featur {
-  margin-top: 150px;
+  margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: space-around !important;
@@ -329,18 +326,20 @@ nav ul li ul li:hover a {
   width: 100%;
 }
 
-footer  {
+footer {
   background: hsl(240, 10%, 16%);
   border-top-right-radius: 5em;
   padding: 50px 5px;
 }
-footer .container{
-    display: flex;
+
+footer .container {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 
 }
+
 footer img {
   max-width: 160px;
 }
@@ -349,9 +348,11 @@ footer div {
   margin: 20px auto;
   text-align: center;
 }
-footer h3{
+
+footer h3 {
   color: #fff;
 }
+
 footer div a {
   color: #C0C0C0;
   padding: 10px;

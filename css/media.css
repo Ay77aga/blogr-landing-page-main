@@ -57,7 +57,7 @@
   nav {
     display: flex;
     width: 90%;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   nav>ul {
@@ -70,26 +70,32 @@
     color: #fff;
   }
 
+  .future {
+    overflow: hidden;
+
+  }
+
   .future .container {
     flex-direction: row;
-    overflow: hidden;
-    justify-content: space-between;
+    align-items: center;
+    transform: translate(160px, 0);
 
   }
 
   .future img {
-    width: 55%;
-    transform: translateX(30%);
+    position: relative;
+    width: 60%;
   }
 
-  .future .container div {
+  .future .container>div {
     text-align: left;
-    margin-left: 40px;
+    margin-left: -100px;
+    max-width: 450px;
   }
 
   .state {
-    height: 250px;
     margin-top: 80px;
+    height: 350px
   }
 
   .state .content {
@@ -98,7 +104,7 @@
     align-items: center;
     height: 100%;
     width: 100%;
-    transform: translateY(0);
+    transform: translate(-50px, 0);
   }
 
   .state .content .data {
@@ -106,7 +112,7 @@
   }
 
   .state .content img {
-    width: 40%;
+    width: 50%;
     margin-left: 50px;
   }
 
@@ -123,19 +129,23 @@
     transform: translate(-25%, -45%) scale(.8);
   }
 
+  .featur {
+    transform: translateX(-100px);
+  }
+
   .featur img {
-    width: 60% !important;
-    transform: translateX(-30%);
+    position: relative;
+    transform: scale(1.1)  translateX(-80px);;
+    width: 65% !important;
   }
 
   .featur>div {
-    transform: translateX(-100px);
-    width: 40%;
+    width: 570px;
   }
 
-  footer .container{
+  footer .container {
     flex-direction: row;
-  align-items: flex-start;
+    align-items: flex-start;
   }
 }
 
@@ -193,7 +203,9 @@
         var(--light-red) 100%);
     color: #fff;
   }
-
+.landing{
+  height: 85vh;
+}
   .future .container div div,
   .featur div div {
     padding: 5px 20px;
