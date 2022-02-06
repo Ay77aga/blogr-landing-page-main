@@ -129,6 +129,9 @@ body {
   left: 0;
   transition: .5s;
 }
+  nav ul li.active img {
+    transform: rotateZ(180deg)
+  }
 
 .active span:first-child {
   transform: rotateZ(45deg);
