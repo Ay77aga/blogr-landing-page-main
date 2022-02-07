@@ -154,7 +154,7 @@
 @media (max-width: 767px) {
   nav {
     position: absolute;
-    width: 90%;
+    width: 85%;
     top: 90px;
     background: #fff;
     text-align: center;
@@ -162,11 +162,12 @@
     padding: 15px;
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, .3);
     transition: .4s;
-    transform: translateX(-200%);
+    transform: translateX(-150%);
   }
-
   nav.active {
-    transform: translateX(0);
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1rem;
   }
 
   nav>ul {

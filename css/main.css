@@ -89,7 +89,7 @@ body {
 .landing header {
   display: flex;
   justify-content: space-between;
-  padding: 40px 0;
+  padding: 40px 15px;
   position: relative;
   z-index: 2;
 }
@@ -168,6 +168,11 @@ nav a {
   font-weight: bold;
   font-size: 18px;
   border-radius: 20px;
+}
+
+.landing .intro a {
+    margin: 70px 0 0 20px;
+
 }
 
 nav a {
