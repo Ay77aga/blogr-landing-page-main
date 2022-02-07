@@ -171,7 +171,7 @@ nav a {
 }
 
 .landing .intro a {
-    margin: 70px 0 0 20px;
+  margin: 70px 0 0 20px;
 
 }
 
@@ -217,14 +217,15 @@ nav ul li ul li a {
 
 nav ul li.active ul {
   height: fit-content;
+
 }
 
 
 nav ul li ul {
   height: 0;
+  border-radius: 1rem;
   overflow: hidden;
   font-size: 16px;
-  transition: .5s;
   background: #eee;
   width: 80%;
   margin: auto;
@@ -320,13 +321,6 @@ nav ul li ul li:hover a {
   line-height: 1.8;
 }
 
-.featur {
-  margin-top: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around !important;
-}
-
 .featur img {
   width: 100%;
 }
@@ -362,4 +356,22 @@ footer div a {
   color: #C0C0C0;
   padding: 10px;
   display: block;
+}
+
+section:not(:first-child),
+footer {
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+.anim {
+  animation: pop 2.5s both;
+}
+
+@keyframes pop {
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

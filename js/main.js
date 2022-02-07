@@ -6,4 +6,11 @@ if (meida.matches) {
   img2.src = 'imgs/illustration-laptop-mobile.svg'
 
 }
-
+let titles = document.querySelectorAll('section , footer ');
+window.addEventListener('scroll', (e) => {
+  titles.forEach(function(title) {
+    if (scrollY >= title.offsetTop - 300) {
+      title.classList.add('anim');
+    }
+  });
+});

@@ -73,18 +73,15 @@
 
   .future {
     overflow: hidden;
-
+    margin-top: 40px;
   }
 
   .future .container {
     flex-direction: row;
     align-items: center;
     transform: translate(160px, 0);
-
   }
-
   .future img {
-    position: relative;
     width: 60%;
   }
 
@@ -94,7 +91,15 @@
     max-width: 450px;
   }
 
-  .state {
+  .featur .container {
+    transform: translate(-100px, 0);
+
+  }
+  .featur .container img {
+    transform: translateX(-17%) scale(1.2);
+
+ }
+ .state {
     margin-top: 80px;
     height: 350px
   }
@@ -130,21 +135,6 @@
     transform: translate(-25%, -45%) scale(.8);
   }
 
-  .featur {
-    transform: translateX(-100px);
-  }
-
-  .featur img {
-    position: relative;
-    transform: scale(1.1) translateX(-80px);
-    ;
-    width: 65% !important;
-  }
-
-  .featur>div {
-    width: 570px;
-  }
-
   footer .container {
     flex-direction: row;
     align-items: flex-start;
@@ -164,6 +154,7 @@
     transition: .4s;
     transform: translateX(-150%);
   }
+
   nav.active {
     left: 50%;
     transform: translateX(-50%);
@@ -180,8 +171,6 @@
     font-size: 18px;
     padding: 5px;
   }
-
-
   nav ul li img {
     transition: .5s;
     transform: scale(1.5);
